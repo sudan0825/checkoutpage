@@ -1,6 +1,7 @@
 import React from 'react';
 
 
+//resuable product decription container 
 const description =(props)=>(
 
   <div className="description">
