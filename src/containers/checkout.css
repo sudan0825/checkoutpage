@@ -1,0 +1,84 @@
+.checkout {
+  width: 30%;
+  min-width: 300px;
+  margin: 50px auto;
+  background-color: aliceblue;
+  padding: 30px 10px;
+  overflow: auto;
+}
+
+.checkout>div {
+  width: 90%;
+  margin: 15px auto;
+
+}
+
+.checkout p {
+  display: inline-block;
+}
+
+.checkout>div>p:first-child {
+  width: 50%;
+}
+
+.interactiveText {
+  text-decoration: underline;
+  position: relative;
+  float: left;
+  padding: 0 25px;
+
+}
+
+.tooltip {
+  text-decoration: none;
+  position: absolute;
+  width: 240px;
+  line-height: 1.3;
+  z-index: 10;
+  background-color: #9db0cc;
+  border-radius: 5px;
+  padding: 10px;
+  display: none;
+  left: 15%;
+  top:110%;
+  font-size: 13px;
+  text-align: justify;
+
+}
+.tooltip::after{
+  content: " ";
+  position: absolute;
+  border-width: 10px;
+  top:-25%;
+  left: 10%;
+  border-color: transparent transparent #9db0cc transparent;
+  border-style: solid;
+}
+.pickup{
+  position: relative;
+  text-decoration: underline;
+
+}
+.pickup:hover{
+  cursor: pointer;
+}
+.pickup:hover .tooltip {
+
+  display: block;
+}
+
+.togocontent {
+  display: none;
+}
+
+.interactiveText:hover, .interactiveText+span {
+  cursor: pointer;
+}
+
+.checkout>div>p:last-child {
+  float: right;
+}
+
+@media only screen and (max-width:800px) {
+  .checkout {}
+}

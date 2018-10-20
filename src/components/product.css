@@ -1,0 +1,40 @@
+.product {
+  width: 90%;
+  margin: auto;
+  overflow: auto;
+}
+
+.imageContainer {
+  display: inline-block;
+  width: 43%;
+  float: left;
+  overflow: auto;
+}
+
+.imageContainer>img {
+  width: 100%;
+  height: auto;
+}
+.clearfix{
+  clear: both;
+
+}
+.description {
+  display: inline-block;
+  width: 54%;
+  float: right;
+}
+.description>p>span{
+  font-weight: bold;
+}
+.description>p:last-child{
+  float: right;
+}
+.promotion{
+  margin: 15px;
+  text-decoration: none;
+}
+
+.promotion div{
+  text-decoration: none;;
+}
