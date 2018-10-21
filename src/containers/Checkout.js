@@ -81,6 +81,7 @@ export class Checkout extends Component {
     }
 
     return (<div className="checkout">
+      <h1>Check  Out</h1>
       <div>
         <p>Subtotal</p>
         <p>
