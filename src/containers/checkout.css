@@ -1,10 +1,13 @@
 .checkout {
   width: 30%;
   min-width: 300px;
-  margin: 50px auto;
+
   background-color: aliceblue;
   padding: 30px 10px;
   overflow: auto;
+  position:absolute;
+  top: 0;
+  right: 50px;
 }
 
 .checkout>div {
@@ -79,6 +82,14 @@
   float: right;
 }
 
-@media only screen and (max-width:800px) {
-  .checkout {}
+@media only screen and (max-width:500px) {
+  .checkout {
+      width: 100%;
+    position: relative;
+  right: 0;
+  
+
+
+
+  }
 }

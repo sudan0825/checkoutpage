@@ -99,7 +99,7 @@ export class Checkout extends Component {
       <div>
         <p>Est. taxes&fees (Based on {this.state.zip})</p>
         <p>
-          ${this.state.taxrate * this.state.subtotal / 100}</p>
+          ${(this.state.taxrate * this.state.subtotal / 100).toFixed(2)}</p>
       </div>
       {
         this.props.discountValue
