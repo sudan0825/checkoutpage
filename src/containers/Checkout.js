@@ -42,14 +42,14 @@ export class Checkout extends Component {
 
   showContent(e) {
 
-    if (e.target.innerHTML.indexOf('details') > 0) {
+    if (e.target.innerHTML.indexOf('details') > 0||e.target.parentElement.innerHTML.indexOf('details') > 0) {
 
       this.setState({
         showItemdetails: !this.state.showItemdetails
       });
     }
 
-    if (e.target.innerHTML.indexOf('promotion') > 0) {
+    if (e.target.innerHTML.indexOf('promotion') > 0||e.target.parentElement.innerHTML.indexOf('promotion') > 0) {
 
       this.setState({
         showPromo: !this.state.showPromo
@@ -122,19 +122,19 @@ export class Checkout extends Component {
       <div  className="interactiveText" onClick={(e) => this.showContent(e)}>{
           this.state.showItemdetails
             ? <div>Hide item details
-                <span>-</span>
+                <span className='span'>-</span>
                 {items}
               </div>
-            : <div className="testSample">Show item details<span>+</span>
+            : <div>Show item details<span className='span'>+</span>
               </div>
         }</div>
       <div className="interactiveText" onClick={(e) => this.showContent(e)}>{
           this.state.showPromo
             ? <div >Hide promotion code
-                <span>-</span>
+                <span className='span'>-</span>
                 <Promotion promochage={(e) => this.promochage(e)} value={this.state.codevalue} applyPromo={() => this.props.applyPromo(this.state.subtotal, this.state.codevalue)}/>
               </div>
-            : <div >Apply promotion code<span>+</span>
+            : <div >Apply promotion code<span className='span'>+</span>
               </div>
         }
 

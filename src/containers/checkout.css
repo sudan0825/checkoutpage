@@ -1,21 +1,21 @@
 .checkout {
   width: 30%;
   min-width: 300px;
-
   background-color: aliceblue;
   padding: 5px 10px;
   overflow: auto;
-  position:absolute;
+  position: absolute;
   top: 0;
   right: 50px;
 }
-.checkout>h1{
+
+.checkout>h1 {
   text-align: center;
 }
+
 .checkout>div {
   width: 90%;
   margin: 15px auto;
-
 }
 
 .checkout p {
@@ -31,7 +31,11 @@
   position: relative;
   float: left;
   padding: 0 25px;
+}
 
+.span {
+  text-decoration:  none ;
+  margin-left: 8px;
 }
 
 .tooltip {
@@ -45,39 +49,36 @@
   padding: 10px;
   display: none;
   left: 15%;
-  top:110%;
+  top: 110%;
   font-size: 13px;
   text-align: justify;
-
 }
-.tooltip::after{
+
+.tooltip::after {
   content: " ";
   position: absolute;
   border-width: 10px;
-  top:-25%;
+  top: -25%;
   left: 10%;
   border-color: transparent transparent #9db0cc transparent;
   border-style: solid;
 }
-.pickup{
+
+.pickup {
   position: relative;
   text-decoration: underline;
-
 }
-.pickup:hover{
+
+.pickup:hover {
   cursor: pointer;
 }
-.pickup:hover .tooltip {
 
+.pickup:hover .tooltip {
   display: block;
 }
 
 .togocontent {
   display: none;
-}
-
-.interactiveText:hover, .interactiveText+span {
-  cursor: pointer;
 }
 
 .checkout>div>p:last-child {
@@ -86,12 +87,8 @@
 
 @media only screen and (max-width:500px) {
   .checkout {
-      width: 100%;
+    width: 100%;
     position: relative;
-  right: 0;
-
-
-
-
+    right: 0;
   }
 }
